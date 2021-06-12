@@ -1,6 +1,5 @@
 My dotfiles
 
-![gif](img/desktop.gif)
 ![screenshot](img/scrot.png)
 
 Reqs:
