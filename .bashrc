@@ -23,7 +23,7 @@ blue="\001$(tput setaf 4)\002"
 reset="\001$(tput sgr0)\002"
 
 longps1="$reset[$green\u " # [user
-longps1+="$blue\w$reset]  " # workingdir]
+longps1+="$blue\W$reset]  " # workingdir]
 longps1+="$greenλ $reset" # λ
 
 export PS1=$longps1
