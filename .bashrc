@@ -18,10 +18,16 @@ alias ls='ls --color=auto'
 #PS1='[\W] λ '
 #PS1=' - '
 
+green="\001$(tput setaf 2)\002"
+blue="\001$(tput setaf 4)\002"
+reset="\001$(tput sgr0)\002"
 
-longps1='[\e[0;32m\]\u \e[0;36m\]\W\e[0;37m\]] \e[0;32m\]λ\e[0;37m\] '
+longps1="$reset[$green\u " # [user
+longps1+="$blue\w$reset]  " # workingdir]
+longps1+="$greenλ $reset" # λ
 
 export PS1=$longps1
+unset green blue dim reset
 
 alias v='vim'
 alias elec='cd ~/Documents/Electronics'
